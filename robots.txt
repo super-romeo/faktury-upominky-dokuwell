@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://faktury-upominky.dokuline.com/sitemap.xml
