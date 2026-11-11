@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="Pro živnostníky a malé s.r.o.: Splatno vystaví fakturu s QR platbou, hlídá splatnost a samo pošle odběrateli upomínku, když faktura není zaplacena.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -73,38 +77,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Splatno</a></div>
-  <nav class="top"><a href="#co" data-ev="click_nav_co">Co dostanete</a><a href="price.html" data-ev="click_nav_cena">Cena</a><a href="#priklad" data-ev="click_nav_priklad">Příklad</a><a href="#start" data-ev="click_nav_start">Začít</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Splatno</a>
+  <nav><a href="#co" data-ev="click_nav_co">Co dostanete</a><a href="price.html" data-ev="click_nav_cena">Cena</a><a href="#priklad" data-ev="click_nav_priklad">Příklad</a><a href="#start" data-ev="click_nav_start">Začít</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Faktura s QR platbou — a upomínka odejde sama, když zákazník nezaplatí</h1>
-    <p class="sub">Pro OSVČ a malé firmy: vystavíte fakturu s QR kódem pro platbu, Splatno hlídá datum splatnosti, po jejím uplynutí pošle odběrateli zdvořilou upomínku a vy vidíte, kdo vám dluží.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">To potřebuji</a>
-    <p class="cta-note">Předběžný přístup · Na této stránce zatím nepřijímáme platby</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Pro OSVČ a malé firmy</p>
+      <h1 class="rise" style="--i:1">Faktura s QR platbou&nbsp;<span class="soft">— a upomínka odejde sama, když zákazník nezaplatí</span></h1>
+      <p class="rise" style="--i:2">Pro OSVČ a malé firmy: vystavíte fakturu s QR kódem pro platbu, Splatno hlídá datum splatnosti, po jejím uplynutí pošle odběrateli zdvořilou upomínku a vy vidíte, kdo vám dluží.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">To potřebuji</a>
+      <p class="meta rise" style="--i:4">Předběžný přístup · Na této stránce zatím nepřijímáme platby</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><text x="130" y="168" font-size="40" fill="#0a1524" font-weight="600">Splatno</text><line x1="120" y1="210" x2="1080" y2="210" stroke="#dde2ea" stroke-width="3" /><rect x="130" y="260" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="196" y="292" font-size="32" fill="#0a1524" font-weight="600">QR platbou</text><rect x="130" y="360" width="44" height="44" rx="8" fill="#12397a" /><text x="196" y="392" font-size="32" fill="#0a1524" font-weight="600">Upomínky</text><rect x="130" y="460" width="320" height="22" rx="8" fill="#dde2ea" /><rect x="130" y="510" width="240" height="22" rx="8" fill="#b9c3d2" /><rect x="130" y="560" width="280" height="22" rx="8" fill="#dde2ea" /><rect x="700" y="260" width="360" height="400" rx="20" fill="#dfe8f7" /><text x="730" y="320" font-size="32" fill="#0a1524" font-weight="600">Kdo dluží</text><rect x="780" y="370" width="200" height="200" rx="12" stroke="#12397a" stroke-width="8" fill="#ffffff" /><rect x="808" y="398" width="48" height="48" fill="#12397a" /><rect x="904" y="398" width="48" height="48" fill="#12397a" /><rect x="808" y="494" width="48" height="48" fill="#dfe8f7" /><rect x="890" y="480" width="62" height="62" fill="#12397a" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Pro</dt><dd>OSVČ a malé firmy</dd></div>
+      <div><dt>Faktura</dt><dd>Faktura s QR platbou</dd></div>
+      <div><dt>Splatnost</dt><dd>Datum splatnosti</dd></div>
+      <div><dt>Přístup</dt><dd>Předběžný přístup</dd></div>
+    </dl>
+  </section>
 
   <section id="co" data-view="features_view">
-    <h2>Co dostanete</h2>
-    <div class="grid">
-      <div class="card"><b>Faktura s QR platbou</b><span>Odběratel zaplatí načtením kódu v bance.</span><br><a class="btn" href="price.html" data-ev="feature_faktura">To potřebuji</a></div>
-      <div class="card"><b>Hlídání splatnosti</b><span>Přehled zaplacených a nezaplacených faktur.</span><br><a class="btn" href="price.html" data-ev="feature_splatnost">To potřebuji</a></div>
-      <div class="card"><b>Upomínky</b><span>E-mail odběrateli po splatnosti, podle vašeho nastavení.</span><br><a class="btn" href="price.html" data-ev="feature_upominky">To potřebuji</a></div>
-      <div class="card"><b>Kdo dluží</b><span>Seznam odběratelů s dlužnou částkou a počtem dní.</span><br><a class="btn" href="price.html" data-ev="feature_prehled">To potřebuji</a></div>
+    <div class="stack"><h2>Co dostanete</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="50" width="660" height="500" rx="22" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><text x="110" y="124" font-size="32" fill="#0a1524" font-weight="600">Faktura s QR platbou</text><rect x="130" y="180" width="280" height="320" rx="18" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><rect x="154" y="208" width="126.0" height="16" rx="8" fill="#12397a" /><rect x="154" y="248" width="196" height="22" rx="8" fill="#dde2ea" /><rect x="154" y="296" width="140" height="22" rx="8" fill="#b9c3d2" /><rect x="154" y="344" width="173" height="22" rx="8" fill="#dde2ea" /><rect x="450" y="230" width="200" height="200" rx="12" stroke="#12397a" stroke-width="8" fill="#ffffff" /><rect x="478" y="258" width="48" height="48" fill="#12397a" /><rect x="574" y="258" width="48" height="48" fill="#12397a" /><rect x="478" y="354" width="48" height="48" fill="#dfe8f7" /><rect x="560" y="340" width="62" height="62" fill="#12397a" /></svg></div>
+        <h3>Faktura s QR platbou</h3><p>Odběratel zaplatí načtením kódu v bance.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_faktura">To potřebuji</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="50" width="660" height="500" rx="22" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><text x="110" y="124" font-size="32" fill="#0a1524" font-weight="600">Hlídání splatnosti</text><rect x="160" y="200" width="52" height="42" rx="8" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><rect x="222" y="200" width="52" height="42" rx="8" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><rect x="284" y="200" width="52" height="42" rx="8" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><rect x="346" y="200" width="52" height="42" rx="8" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><rect x="160" y="252" width="52" height="42" rx="8" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><rect x="222" y="252" width="52" height="42" rx="8" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><rect x="284" y="252" width="52" height="42" rx="8" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><rect x="346" y="252" width="52" height="42" rx="8" fill="#12397a" /><rect x="160" y="304" width="52" height="42" rx="8" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><rect x="222" y="304" width="52" height="42" rx="8" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><rect x="284" y="304" width="52" height="42" rx="8" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><rect x="346" y="304" width="52" height="42" rx="8" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /></svg></div>
+        <h3>Hlídání splatnosti</h3><p>Přehled zaplacených a nezaplacených faktur.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_splatnost">To potřebuji</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="50" width="660" height="500" rx="22" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><text x="110" y="124" font-size="32" fill="#0a1524" font-weight="600">Upomínky</text><rect x="200" y="190" width="280" height="160" rx="28" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><polygon points="240,350 270,350 248,386" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="228" y="226" width="180" height="18" rx="8" fill="#dde2ea" /><rect x="228" y="260" width="140" height="18" rx="8" fill="#b9c3d2" /><rect x="228" y="298" width="90" height="28" rx="14" fill="#12397a" /></svg></div>
+        <h3>Upomínky</h3><p>E-mail odběrateli po splatnosti, podle vašeho nastavení.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_upominky">To potřebuji</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="50" width="660" height="500" rx="22" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><text x="110" y="124" font-size="32" fill="#0a1524" font-weight="600">Kdo dluží</text><rect x="150" y="200" width="380" height="22" rx="8" fill="#dde2ea" /><rect x="150" y="248" width="240" height="22" rx="8" fill="#b9c3d2" /><rect x="150" y="296" width="320" height="22" rx="8" fill="#dde2ea" /><rect x="150" y="344" width="180" height="22" rx="8" fill="#b9c3d2" /><rect x="150" y="200" width="28" height="22" rx="6" fill="#12397a" /><rect x="150" y="296" width="28" height="22" rx="6" fill="#12397a" /></svg></div>
+        <h3>Kdo dluží</h3><p>Seznam odběratelů s dlužnou částkou a počtem dní.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_prehled">To potřebuji</a>
+      </article>
     </div>
   </section>
 
-  <section id="priklad" data-view="example_view">
-    <h2>Příklad (fiktivní údaje)</h2>
-    <p class="fine">Grafik na volné noze z Brna vystaví měsíčně kolem dvanácti faktur. Dřív si splatnost hlídal v tabulce a na nezaplacené faktury zapomínal. Teď vystaví fakturu s QR platbou, nastaví upomínku tři dny po splatnosti a Splatno ji pošle samo. Na přehledu vidí, že dva klienti dluží, a třetí den po upomínce je jedna faktura zaplacená.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Vyberte tarif</a>
+  <section id="priklad" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Příklad</h2>
+      <p>Grafik na volné noze z Brna vystaví měsíčně kolem dvanácti faktur. Dřív si splatnost hlídal v tabulce a na nezaplacené faktury zapomínal. Teď vystaví fakturu s QR platbou, nastaví upomínku tři dny po splatnosti a Splatno ji pošle samo. Na přehledu vidí, že dva klienti dluží, a třetí den po upomínce je jedna faktura zaplacená.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Vyberte tarif</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="240" y1="160" x2="960" y2="160" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="160" r="22" stroke="#12397a" stroke-width="6" fill="#ffffff" /><text x="240" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">dvanácti faktur</text><circle cx="600" cy="160" r="22" stroke="#12397a" stroke-width="6" fill="#ffffff" /><text x="600" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">dva klienti</text><circle cx="960" cy="160" r="22" fill="#12397a" /><text x="960" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">zaplacená</text><rect x="120" y="300" width="960" height="420" rx="24" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><text x="170" y="380" font-size="36" fill="#0a1524" font-weight="600">Upomínky</text><rect x="180" y="430" width="200" height="200" rx="12" stroke="#12397a" stroke-width="8" fill="#ffffff" /><rect x="208" y="458" width="48" height="48" fill="#12397a" /><rect x="304" y="458" width="48" height="48" fill="#12397a" /><rect x="208" y="554" width="48" height="48" fill="#dfe8f7" /><rect x="290" y="540" width="62" height="62" fill="#12397a" /><rect x="460" y="430" width="280" height="160" rx="28" stroke="#dde2ea" stroke-width="3" fill="#ffffff" /><polygon points="500,590 530,590 508,626" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="488" y="466" width="180" height="18" rx="8" fill="#dde2ea" /><rect x="488" y="500" width="140" height="18" rx="8" fill="#b9c3d2" /><rect x="488" y="538" width="90" height="28" rx="14" fill="#12397a" /></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Jak to funguje</h2>
-    <p>Živnostník nebo malá s.r.o. vystaví fakturu, pošle ji e-mailem a pak čeká. Část faktur přijde včas, část až po připomenutí a některé se ztratí, protože na ně nikdo nemá čas myslet. Hlídání splatnosti v tabulce nebo v kalendáři funguje jen do chvíle, kdy je práce víc.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Jak to funguje</h2></div>
+    <div class="stack">
+      <p>Živnostník nebo malá s.r.o. vystaví fakturu, pošle ji e-mailem a pak čeká. Část faktur přijde včas, část až po připomenutí a některé se ztratí, protože na ně nikdo nemá čas myslet. Hlídání splatnosti v tabulce nebo v kalendáři funguje jen do chvíle, kdy je práce víc.</p>
     <p>Splatno spojuje vystavení faktury a hlídání platby do jednoho kroku. Odpovědi na časté otázky najdete v sekci <a href="#faq" data-ev="click_opis_faq">otázek a odpovědí</a> a zájem můžete dát najevo <a href="#start" data-ev="click_opis_start">dole na stránce</a>.</p>
     <p>Fakturu vystavíte z údajů odběratele, které zadáte jednou: název, IČO, DIČ, adresa a e-mail. Na fakturu se doplní QR kód pro platbu s číslem účtu, částkou a variabilním symbolem, takže odběratel zaplatí načtením kódu v mobilním bankovnictví a nemusí nic přepisovat.</p>
     <p>Každá faktura má datum splatnosti. Splatno ukazuje, které faktury jsou zaplacené, které ještě nejsou splatné a které jsou po splatnosti. Zaplacení označíte jedním klikem nebo podle výpisu z banky.</p>
@@ -117,31 +151,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Ke každé faktuře zůstává historie: kdy byla vystavena a odeslána, kdy odešly upomínky a kdy přišla platba. Když se odběratel ozve, že fakturu nedostal, během chvíle mu ji pošlete znovu se stejným QR kódem. Na konci roku máte všechny faktury pohromadě pro daňové přiznání.</p>
     <p>Pro začátek stačí zadat jednoho odběratele a vystavit první fakturu.</p>
     <p>Splatno připravuje faktury a upomínky; odpovědnost za údaje na faktuře a za vymáhání pohledávek zůstává na podnikateli.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Časté dotazy</h2>
-    <h3>Co Splatno dělá?</h3>
-    <p>Vystaví fakturu s QR platbou, hlídá splatnost a po ní pošle odběrateli upomínku e-mailem podle vašeho nastavení.</p>
-    <h3>Kdy upomínka odejde?</h3>
-    <p>Kolik dní po splatnosti a kolikrát, si nastavíte sami; připomenutí může odejít i před splatností.</p>
-    <h3>Je to účetní program?</h3>
-    <p>Ne. Splatno řeší jen faktury a jejich zaplacení; účetnictví nebo daňovou evidenci vede dál vaše účetní.</p>
-    <h3>Pro koho je Splatno?</h3>
-    <p>Pro OSVČ a malé s.r.o., které vystavují od několika do několika desítek faktur měsíčně.</p>
-    <h3>Mohu ho používat už teď?</h3>
-    <p>Zatím ne. Služba se připravuje a ověřujeme, zda ji podnikatelé potřebují.</p>
+    <div class="stack"><h2>Časté dotazy</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Co Splatno dělá?</h3><p>Vystaví fakturu s QR platbou, hlídá splatnost a po ní pošle odběrateli upomínku e-mailem podle vašeho nastavení.</p></div>
+      <div class="split flip"><h3>Kdy upomínka odejde?</h3><p>Kolik dní po splatnosti a kolikrát, si nastavíte sami; připomenutí může odejít i před splatností.</p></div>
+      <div class="split flip"><h3>Je to účetní program?</h3><p>Ne. Splatno řeší jen faktury a jejich zaplacení; účetnictví nebo daňovou evidenci vede dál vaše účetní.</p></div>
+      <div class="split flip"><h3>Pro koho je Splatno?</h3><p>Pro OSVČ a malé s.r.o., které vystavují od několika do několika desítek faktur měsíčně.</p></div>
+      <div class="split flip"><h3>Mohu ho používat už teď?</h3><p>Zatím ne. Služba se připravuje a ověřujeme, zda ji podnikatelé potřebují.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Dejte nám vědět</h2>
-    <p><label>Kolik faktur měsíčně vystavujete<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— vyberte —</option><option>Do 5</option><option>5–20</option><option>20–50</option><option>Více než 50</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Začít</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Dejte nám vědět</h2>
+    </div>
+    <div class="tile stack">
+      <label>Kolik faktur měsíčně vystavujete<select data-ev-focus="form_start"><option value="">— vyberte —</option><option>Do 5</option><option>5–20</option><option>20–50</option><option>Více než 50</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Začít</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Splatno</b></p>
   <p><a href="ochrana-udaju.html" data-ev="click_legal_privacy">Ochrana osobních údajů</a></p>
-  <p class="muted">Splatno připravuje faktury a upomínky; odpovědnost za údaje na faktuře a za vymáhání pohledávek zůstává na podnikateli.</p>
+  <p>Splatno připravuje faktury a upomínky; odpovědnost za údaje na faktuře a za vymáhání pohledávek zůstává na podnikateli.</p>
 </div></footer>
 
 </body>
